@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "streetsidesoftware.code-spell-checker",
+        "csharpier.csharpier-vscode",
+        "EditorConfig.EditorConfig",
+        "shardulm94.trailing-spaces",
+        "visualstudiotoolsforunity.vstuc"
+    ]
+}
