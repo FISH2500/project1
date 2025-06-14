@@ -20558,6 +20558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395331978}
   - component: {fileID: 395331977}
+  - component: {fileID: 395331979}
   m_Layer: 0
   m_Name: RespawnSystem
   m_TagString: Untagged
@@ -20609,6 +20610,19 @@ Transform:
   - {fileID: 1289671336}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395331979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395331976}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067e67400bd18ca418dad7cb0d52d5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeTime: 5
 --- !u!1 &408722892
 GameObject:
   m_ObjectHideFlags: 0
