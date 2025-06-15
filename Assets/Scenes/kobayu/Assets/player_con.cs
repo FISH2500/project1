@@ -16,30 +16,55 @@ public class player_con : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerMove();
+    }
+
+    void PlayerMove()
+    {
         //WASD操作
-        if(Keyboard.current.wKey.isPressed){
+        if (Keyboard.current.wKey.isPressed)
+        {
             rb.AddForce(transform.forward * MoveSpeed);
-            Ani.SetBool("W",true);
-        }else{
-            Ani.SetBool("W",false);
+            Ani.SetBool("W", true);
         }
-        if(Keyboard.current.sKey.isPressed){
+        else
+        {
+            Ani.SetBool("W", false);
+        }
+        if (Keyboard.current.sKey.isPressed)
+        {
             rb.AddForce(transform.forward * -MoveSpeed);
-            Ani.SetBool("S",true);
-        }else{
-            Ani.SetBool("S",false);
+            Ani.SetBool("S", true);
         }
-        if(Keyboard.current.dKey.isPressed){
+        else
+        {
+            Ani.SetBool("S", false);
+        }
+        if (Keyboard.current.dKey.isPressed)
+        {
             rb.AddForce(transform.right * MoveSpeed);
-            Ani.SetBool("D",true);
-        }else{
-            Ani.SetBool("D",false);
+            Ani.SetBool("D", true);
         }
-        if(Keyboard.current.aKey.isPressed){
+        else
+        {
+            Ani.SetBool("D", false);
+        }
+        if (Keyboard.current.aKey.isPressed)
+        {
             rb.AddForce(transform.right * -MoveSpeed);
-            Ani.SetBool("A",true);
-        }else{
-            Ani.SetBool("A",false);
+            Ani.SetBool("A", true);
+        }
+        else
+        {
+            Ani.SetBool("A", false);
+        }
+    }
+
+    void VendingCheck()
+    {
+        if (Eventcatch.Instance.isHit)
+        {
+
         }
     }
 }
