@@ -1,15 +1,43 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.Events;
+
 public class Eventcatch : MonoBehaviour
 {
-    public Eventcatch Instance { get; private set; }
-    public GameObject button;
+    public static Eventcatch Instance { get; private set; }
 
     public bool isHit;
 
-    void OnTrrigerEnter(Colider collision)
+    private void Start()
     {
-       
-       button.SetActive(true);
-       isHit = true;
+        if (Instance==null)
+        {
+            Instance = this;
+        }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag=="Vending")
+        {
+            isHit = true;
+            UIManager.Instance.SetVendingCheckUI(isHit);
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Vending")
+        {
+            isHit = false;
+            UIManager.Instance.SetVendingCheckUI(isHit);
+        }
+
+    }
+
+
+
 }
 
