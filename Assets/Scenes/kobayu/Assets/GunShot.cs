@@ -23,17 +23,26 @@ public class GunShot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Timer += Time.deltaTime;
-        if(Mouse.current.leftButton.isPressed){
-            if(CoolTime < Timer){
-                Shot();
-                Timer = 0;
-                Ani.SetBool("Shot",true);
+        if (Time.timeScale == 1)
+        {
+            Timer += Time.deltaTime;
+            if (Mouse.current.leftButton.isPressed)
+            {
+                if (CoolTime < Timer)
+                {
+                    Shot();
+                    Timer = 0;
+                    Ani.SetBool("Shot", true);
+                }
+                Ani.SetBool("Shot", true);
             }
-            Ani.SetBool("Shot",true);
-        }else{
-            Ani.SetBool("Shot",false);
+            else
+            {
+                Ani.SetBool("Shot", false);
+            }
         }
+
+
     }
 
     void Shot(){
