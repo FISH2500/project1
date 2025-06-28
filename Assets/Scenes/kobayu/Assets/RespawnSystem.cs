@@ -8,7 +8,6 @@ public class RespawnSystem : MonoBehaviour
     private int Index;//リスポーンさせるときに何番のオブジェクトを生成するかここで決める。
     public Transform StartRange;//生成する範囲の始まり
     public Transform EndRange;//生成する範囲の終わり
-    //public GameObject Obj;//リスポーンさせるオブジェ
     public int Amount = 400;//リスポーンさせる数。
     private int MaxAmount = 0;//実行中にこれ以上増やせないか調べるための変数。随時更新される。
     private List<GameObject> ObjList = new List<GameObject>();
