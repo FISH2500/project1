@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 89531381}
   - component: {fileID: 89531380}
   - component: {fileID: 89531379}
+  - component: {fileID: 89531382}
   m_Layer: 3
   m_Name: kabe
   m_TagString: Wall
@@ -258,6 +259,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89531377}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &89531382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89531377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1116c11a7ec7f4ea62f4dbc3c93071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  TagName: NULL
+  DestroyObj: {fileID: 89531377}
 --- !u!1 &97721412
 GameObject:
   m_ObjectHideFlags: 0
@@ -20588,7 +20604,7 @@ MonoBehaviour:
   StartRange: {fileID: 64866122}
   EndRange: {fileID: 968919653}
   Amount: 1000
-  RunEnd: 0
+  RunEnd: 1
   Timer: 0
 --- !u!4 &395331978
 Transform:
@@ -20853,6 +20869,7 @@ GameObject:
   - component: {fileID: 470043021}
   - component: {fileID: 470043020}
   - component: {fileID: 470043019}
+  - component: {fileID: 470043023}
   m_Layer: 3
   m_Name: kabe
   m_TagString: Wall
@@ -20949,6 +20966,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 278927961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470043023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470043018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1116c11a7ec7f4ea62f4dbc3c93071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  TagName: NULL
+  DestroyObj: {fileID: 470043018}
 --- !u!1 &512574099
 GameObject:
   m_ObjectHideFlags: 0
@@ -25993,6 +26025,9 @@ GameObject:
   - component: {fileID: 653506781}
   - component: {fileID: 653506780}
   - component: {fileID: 653506779}
+  - component: {fileID: 653506785}
+  - component: {fileID: 653506786}
+  - component: {fileID: 653506787}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -26013,7 +26048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  TagName: Untagged
+  TagName: Wall
   DestroyObj: {fileID: 653506778}
 --- !u!65 &653506780
 BoxCollider:
@@ -26022,7 +26057,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653506778}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2607f77472868bf4cb63c57f8665565b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -26043,7 +26078,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653506778}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2607f77472868bf4cb63c57f8665565b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -26119,12 +26154,82 @@ Transform:
   m_GameObject: {fileID: 653506778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.88, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.4, z: 0.2}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1571169384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653506785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653506778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b3a994b6ba51c47a3bf12a72782311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyAni: {fileID: 653506787}
+  EnemyV: {x: 0, y: 0, z: 0}
+  EnemyLookAt: 0
+  RayOrigin: {fileID: 653506784}
+  RayDstns: 100
+  WallRayDstns: 10
+  WallTurnAngle: 90
+  RotateAngle: 10
+  AttackDstns: 5
+--- !u!54 &653506786
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653506778}
+  serializedVersion: 5
+  m_Mass: 10
+  m_LinearDamping: 1
+  m_AngularDamping: 1
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!95 &653506787
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653506778}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2833ff91b873ace449c25693a3448538, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &666671157
 GameObject:
   m_ObjectHideFlags: 0
@@ -42966,7 +43071,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 60, y: 1, z: 60}
+  m_LocalScale: {x: 68, y: 1, z: 68}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 64866122}
@@ -47998,6 +48103,7 @@ GameObject:
   - component: {fileID: 1926688298}
   - component: {fileID: 1926688297}
   - component: {fileID: 1926688296}
+  - component: {fileID: 1926688299}
   m_Layer: 3
   m_Name: kabe
   m_TagString: Wall
@@ -48094,6 +48200,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926688294}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1926688299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926688294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1116c11a7ec7f4ea62f4dbc3c93071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  TagName: NULL
+  DestroyObj: {fileID: 1926688294}
 --- !u!1 &1936403161
 GameObject:
   m_ObjectHideFlags: 0
