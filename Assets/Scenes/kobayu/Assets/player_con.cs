@@ -18,7 +18,7 @@ public class player_con : MonoBehaviour
     void Update()
     {
         PlayerMove();
-        VendingCheck();
+       // VendingCheck();
     }
 
     void PlayerMove()
