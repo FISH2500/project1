@@ -22,12 +22,21 @@ public class WallDestroySystem : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("OnTrigger!!");
-        if(other.gameObject.tag == TagName){
-            Debug.Log("OnTrigger" + TagName + "!!");
-            WallDestroySystem WallDestroySystem_scr = other.gameObject.GetComponent<WallDestroySystem>();
-            if(WallDestroySystem_scr.timer > timer){
-                Destroy(DestroyObj);
+        try
+        {
+            if (other.CompareTag(TagName))
+            {
+                Debug.Log("OnTrigger" + TagName + "!!");
+                WallDestroySystem WallDestroySystem_scr = other.gameObject.GetComponent<WallDestroySystem>();
+                if (WallDestroySystem_scr.timer > timer)
+                {
+                    Destroy(DestroyObj);
+                }
             }
+        }
+        catch
+        {
+            Debug.LogError("ゲームオブジェクト、" + gameObject.name + "がWallDestroySystemでエラー。");
         }
     }
 }
