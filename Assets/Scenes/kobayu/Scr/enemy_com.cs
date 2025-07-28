@@ -18,6 +18,8 @@ public class enemy_com : MonoBehaviour
     public float RotateAngle = 5;//プレイヤーが見つからないとき、常にこの角度に回る。
     private Rigidbody rb;//リジッドボディ。
     public float AttackDstns = 10;//攻撃する距離。
+    private float EnemyWarningTimer;//敵がプレイヤーを見失ったのち、警戒する時のタイマー。
+    public float EnemyWarningTime;//敵がプレイヤーを見失ったのち、警戒する時間。これが過ぎてから初めてプレイヤーを見失う。
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -90,10 +92,19 @@ public class enemy_com : MonoBehaviour
             {
                 transform.LookAt(Player.transform);
             }
+            EnemyWarningTimer = 0;
         }
         else
         {
-            EnemyAni.SetBool("PlayerLook", false);
+            if (EnemyWarningTimer > EnemyWarningTime)
+            {
+                EnemyAni.SetBool("PlayerLook", false);
+            }
+            else
+            {
+                EnemyWarningTimer += Time.deltaTime;
+            }
+
             if (LookWall)
             {
                 transform.Rotate(0, WallTurnAngle * Time.deltaTime, 0);
@@ -106,7 +117,11 @@ public class enemy_com : MonoBehaviour
     }
     void CanIAttackMethod()
     {
-        if (Player == null) return;
+        if (Player == null)
+        {
+            EnemyAni.SetBool("Attack", false);
+            return;
+        }
         float Dstns = Vector3.Distance(Player.transform.position, transform.position);
         if (Dstns < AttackDstns)
         {
