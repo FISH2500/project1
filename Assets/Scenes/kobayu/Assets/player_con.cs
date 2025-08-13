@@ -69,7 +69,7 @@ public class player_con : MonoBehaviour
         }
     }
 
-    void VendingCheck()
+    void VendingCheck()//自販機を調べた場合
     {
         if (Eventcatch.Instance.isHit&& Keyboard.current.bKey.wasPressedThisFrame)
         {
@@ -81,7 +81,7 @@ public class player_con : MonoBehaviour
 
 
             UIManager.Instance.ShowVending(isCheck);
-
+            
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -89,9 +89,6 @@ public class player_con : MonoBehaviour
 
     int BooltoInt(bool toInt)
     {
-
-
-
         return toInt ? 1 : 0;
     }
 }
