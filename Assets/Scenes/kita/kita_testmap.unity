@@ -26524,7 +26524,10 @@ RectTransform:
   - {fileID: 1044639963}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - {fileID: 1209202926}
@@ -43854,6 +43857,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce7ba61e541ea347b11bcd77ff7732e, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -43898,6 +43904,9 @@ MonoBehaviour:
   - {fileID: 2110774711}
   - {fileID: 1140241600}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -56182,8 +56191,12 @@ SceneRoots:
   - {fileID: 621027823}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 1722350715}
   - {fileID: 681058790}
+=======
+  - {fileID: 7836143342128879463}
+>>>>>>> Stashed changes
 =======
   - {fileID: 7836143342128879463}
 >>>>>>> Stashed changes

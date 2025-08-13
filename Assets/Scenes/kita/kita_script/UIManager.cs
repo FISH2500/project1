@@ -6,6 +6,9 @@ using TMPro;
 using NUnit.Framework;
 using System.Collections.Generic;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -22,6 +25,9 @@ public class UIManager : MonoBehaviour
     public SkillSet skillset;
     public List<Transform> Canvas = new List<Transform>();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -80,6 +86,9 @@ public class UIManager : MonoBehaviour
 
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
