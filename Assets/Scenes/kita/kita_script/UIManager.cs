@@ -5,6 +5,9 @@ using UnityEngine;
 using TMPro;
 using NUnit.Framework;
 using System.Collections.Generic;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 public class UIManager : MonoBehaviour
 {
@@ -18,6 +21,9 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI allbulletetx;
     public SkillSet skillset;
     public List<Transform> Canvas = new List<Transform>();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     private void Awake()
     {
@@ -73,6 +79,9 @@ public class UIManager : MonoBehaviour
         }
 
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     void Update()
