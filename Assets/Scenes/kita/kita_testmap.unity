@@ -26522,17 +26522,7 @@ RectTransform:
   - {fileID: 1955862145}
   - {fileID: 2083949866}
   - {fileID: 1044639963}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
   - {fileID: 1209202926}
   - {fileID: 316491329}
 >>>>>>> Stashed changes
@@ -43859,16 +43849,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce7ba61e541ea347b11bcd77ff7732e, type: 3}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 --- !u!1 &1591980732
 GameObject:
   m_ObjectHideFlags: 0
@@ -43900,8 +43881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VendingCheckText: {fileID: 1044639962}
   VendingCanvas: {fileID: 2083949865}
-<<<<<<< Updated upstream
-=======
+
   bulletetx: {fileID: 697956665}
   allbulletetx: {fileID: 728471940}
   skillset: {fileID: 1031796385}
@@ -43910,15 +43890,9 @@ MonoBehaviour:
   - {fileID: 2110774711}
   - {fileID: 1140241600}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 --- !u!4 &1591980734
 Transform:
   m_ObjectHideFlags: 0
@@ -56198,24 +56172,20 @@ SceneRoots:
   - {fileID: 1886020931}
   - {fileID: 529883971}
   - {fileID: 621027823}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
   - {fileID: 1722350715}
   - {fileID: 681058790}
-=======
+
   - {fileID: 7836143342128879463}
->>>>>>> Stashed changes
-=======
+
   - {fileID: 7836143342128879463}
->>>>>>> Stashed changes
-=======
+
   - {fileID: 7836143342128879463}
->>>>>>> Stashed changes
-=======
+
   - {fileID: 7836143342128879463}
->>>>>>> Stashed changes
+
+  - {fileID: 7836143342128879463}
+
   - {fileID: 1591980734}
   - {fileID: 1287752390}
   - {fileID: 1033891430}
