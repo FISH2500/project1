@@ -32614,63 +32614,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980921684}
   m_CullTransparentMesh: 1
---- !u!1001 &1033891430
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.473806
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.0439234
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564222175502260489, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5600922862493877918, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
-      propertyPath: m_Name
-      value: VendingMachine (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8c46fde7df6682a479b36b827c95f3f8, type: 3}
 --- !u!1 &1038448104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aabef87ae6e1cb94894764a72d93b7a5, type: 3}
@@ -56419,4 +56362,3 @@ SceneRoots:
   - {fileID: 7836143342128879463}
   - {fileID: 1591980734}
   - {fileID: 1287752390}
-  - {fileID: 1033891430}
