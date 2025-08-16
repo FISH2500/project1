@@ -60,7 +60,7 @@ public class RayCastGunScript : MonoBehaviour
     void Reload()
     {
 
-        Debug.Log("ƒŠƒ[ƒh’†");
+        Debug.Log("ãƒªãƒ­ãƒ¼ãƒ‰ä¸­");
 
         //StartCoroutine(BulleteSet());
 
@@ -73,11 +73,11 @@ public class RayCastGunScript : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         isReload = true;
-        Debug.Log("ƒŠƒ[ƒhŠ®—¹");
+        Debug.Log("ãƒªãƒ­ãƒ¼ãƒ‰å®Œäº†");
         bulletNum = 20;
 
 
-        Debug.Log("3sŒã‚Ìƒtƒ‰ƒO" + isReload);
+        Debug.Log("3så¾Œã®ãƒ•ãƒ©ã‚°" + isReload);
 
 
 
@@ -87,9 +87,9 @@ public class RayCastGunScript : MonoBehaviour
     {
         if (bulletNum >= 0 && bulletNum < 20)
         {
-            int needbullete = MaxBulletNum - bulletNum;//ƒŠƒ[ƒh‚µ‚½‚Æ‚«‚É•â[‚³‚ê‚é’e”
-            Debug.Log("•K—v‚È’e”" + needbullete + "‚·‚×‚Ä‚Ì’e”" + AllBulletNum);
-            if (AllBulletNum <= needbullete)//’e”‚ª‘«‚è‚È‚¢ê‡
+            int needbullete = MaxBulletNum - bulletNum;//ãƒªãƒ­ãƒ¼ãƒ‰ã—ãŸã¨ãã«è£œå……ã•ã‚Œã‚‹å¼¾æ•°
+            Debug.Log("å¿…è¦ãªå¼¾æ•°" + needbullete + "ã™ã¹ã¦ã®å¼¾æ•°" + AllBulletNum);
+            if (AllBulletNum <= needbullete)//å¼¾æ•°ãŒè¶³ã‚Šãªã„å ´åˆ
             {
                 bulletNum += AllBulletNum;
 
@@ -97,8 +97,8 @@ public class RayCastGunScript : MonoBehaviour
             }
             else
             {
-                AllBulletNum -= needbullete;//‚·‚×‚Ä‚Ì’e”‚©‚ç•K—v‚È’e”•ªˆø‚­
-                Debug.Log("ƒŠƒ[ƒhŠ®—¹" + bulletNum);
+                AllBulletNum -= needbullete;//ã™ã¹ã¦ã®å¼¾æ•°ã‹ã‚‰å¿…è¦ãªå¼¾æ•°åˆ†å¼•ã
+                Debug.Log("ãƒªãƒ­ãƒ¼ãƒ‰å®Œäº†" + bulletNum);
 
                 bulletNum += needbullete;
             }
@@ -112,7 +112,7 @@ public class RayCastGunScript : MonoBehaviour
         if (AllBulletNum <= 0 && bulletNum <= 0)
         {
             isbullets = true;
-            Debug.Log("’eØ‚ê");
+            Debug.Log("å¼¾åˆ‡ã‚Œ");
         }
     }
 }
