@@ -19,6 +19,7 @@ public class player_con : MonoBehaviour
     {
         PlayerMove();
        // VendingCheck();
+       if(Keyboard.current.bKey.isPressed&&Eventcatch.Instance.isHit) VendingCheck();
     }
 
     void PlayerMove()
