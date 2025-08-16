@@ -5,13 +5,13 @@ using System.Collections.Generic;
 
 public class UIManager : MonoBehaviour
 {
-    public static UIManager Instance { get; private set; }
+    public static UIManager Instance { get; private set; }  
     public GameObject VendingCheckText;
     public GameObject VendingCanvas;
 
     public TextMeshProUGUI bulletetx;
     public TextMeshProUGUI allbulletetx;
-    public SkillSet skillset;
+    
     public List<Transform> Canvas = new List<Transform>();
 
     private void Awake()
@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
         VendingCanvas.SetActive(isShow);
     }
 
-    public void BulletOutPut(int bullete)
+    public void BulletOutPut(int bullete) 
     {
         bulletetx.text = "" + bullete;
     }
@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
         allbulletetx.text = "" + allbullete;
     }
 
-    public void SkillSelectSet(List<GameObject> SkillSelect)
+    public void SkillSelectSet(List<GameObject> SkillSelect) 
     {
         for (int j = 0; j < SkillSelect.Count; j++)
         {
@@ -51,11 +51,11 @@ public class UIManager : MonoBehaviour
 
     public void SkillSetFunc(int VendingID)
     {
-        Debug.Log("U‚ê‚½Ž©”Ì‹@‚ÌID‚Í" + VendingID);
+        Debug.Log("æŒ¯ã‚ŒãŸè‡ªè²©æ©Ÿã®IDã¯" + VendingID);
 
         for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < Canvas[i].childCount; j++)
+            for(int j = 0; j < Canvas[i].childCount; j++) 
             {
                 Canvas[i].GetChild(j).gameObject.SetActive(false);
             }
@@ -69,6 +69,6 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-
+        
     }
 }
