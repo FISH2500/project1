@@ -7,7 +7,8 @@ public class RayCastGunScript : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
     public float fireRate=15f;
-    
+    float AllBulleteNum;
+    float BulleteNum;
     public Camera fpscam; 
     private float nextTimeFire;
     void Update()
