@@ -22,6 +22,10 @@ public class Eventcatch : MonoBehaviour
         if (other.tag=="Vending")
         {
             isHit = true;
+            SkillSet skillsetscr=other.gameObject.GetComponent<SkillSet>();
+
+            Debug.Log("Ž©”Ì‹@‚ÌID‚Í"+skillsetscr.VendingID);
+            UIManager.Instance.SkillSetFunc(skillsetscr.VendingID);
             UIManager.Instance.SetVendingCheckUI(isHit);
         }
 
