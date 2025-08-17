@@ -48,11 +48,22 @@ public class RayCastGunScript : MonoBehaviour
         if (Physics.Raycast(Fpscam.transform.position, Fpscam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-            TargetScript target = hit.transform.GetComponent<TargetScript>();
-
-            if (target != null)
+            //TargetScript target = hit.transform.GetComponent<TargetScript>();
+            EnemyCollisionScr enemycol = hit.transform.GetComponent<EnemyCollisionScr>();
+            if (enemycol != null)
             {
-                target.TakeDamage(damage);
+                switch (hit.transform.tag)
+                {
+                    case "Head": Debug.Log("頭"); enemycol.Send_Damage(20); break;
+
+                    case "Body": Debug.Log("体"); enemycol.Send_Damage(10); break;
+
+                    case "Leg": Debug.Log("足"); enemycol.Send_Damage(5); break;
+                }
+
+
+                    
+                
             }
         }
     }
