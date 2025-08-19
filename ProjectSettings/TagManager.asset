@@ -9,6 +9,9 @@ TagManager:
   - Dangan
   - Vending
   - Enemy
+  - Head
+  - Body
+  - Leg
   layers:
   - Default
   - TransparentFX
