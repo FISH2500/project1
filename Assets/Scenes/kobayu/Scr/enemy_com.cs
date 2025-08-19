@@ -90,7 +90,9 @@ public class enemy_com : MonoBehaviour
             EnemyAni.SetBool("PlayerLook", true);
             if (EnemyLookAt)
             {
-                transform.LookAt(Player.transform);
+                Quaternion LookRot = Quaternion.LookRotation(Player.transform.position - transform.position);
+                Vector3 LookRotEuler = new Vector3(0, LookRot.eulerAngles.y, 0);
+                transform.rotation = Quaternion.Euler(LookRotEuler);
             }
             EnemyWarningTimer = 0;
         }
