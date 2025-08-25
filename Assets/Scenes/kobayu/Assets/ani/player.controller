@@ -64,7 +64,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: A
-  m_Speed: 10
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 8089322816678711299}
@@ -258,7 +258,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: run_S
-  m_Speed: 10
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -2223831181794933929}
@@ -314,7 +314,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: D
-  m_Speed: 10
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8224077512042622143}
@@ -469,7 +469,7 @@ AnimatorController:
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
+    m_DefaultWeight: 0.5
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
@@ -598,7 +598,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: run_W
-  m_Speed: 10
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -2709481437639620805}
